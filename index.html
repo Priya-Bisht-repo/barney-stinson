@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Suit Up Challenge</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="images">
-    <img id="barney" class="barney-img" src="barney-neutral.png" alt="Barney Neutral">
+
+  <div class="image-container">
+    <img src="barney-neutral.png" alt="Barney Neutral" class="barney-img" id="barneyImg">
+    <img src="sunglass.png" alt="Sunglasses" class="sunglasses" id="sunglasses">
+    <img src="tear.png" alt="Tear Drop" class="tear" id="tear">
   </div>
-  <input type="text" id="inputBox" placeholder="Say something awesome to make Barney suit up...">
+  <input type="text" id="inputBox" placeholder="Say something awesome to Barney ...">
   <button id="submitBtn">Suit Me Up!</button>
-  <div class="message" id="message"></div>
+  <div class="message typing" id="message"></div>
+  <audio id="suitSound" src="suit-up.mp3"></audio>
   <script src="script.js"></script>
 </body>
 </html>
